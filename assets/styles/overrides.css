@@ -1,0 +1,120 @@
+/**
+ * Application specific styles, pretty unordered.
+ */
+
+pre {
+  white-space: -moz-pre-wrap;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+code:hover {
+  cursor: pointer;
+}
+
+.slide pre code.javascript {
+  background: #ddd;
+  padding: 10px;
+  position: relative;
+  left: -10px;
+}
+
+.slide pre code.javascript:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #0174A7;
+  color: #fff;
+  font-size: 18px;
+  padding: 0 6px;
+  content: "JavaScript"
+}
+
+hr {
+  display: none;
+}
+
+.editor-container {
+  position: absolute;
+  top: 0;
+  left: 9999px;
+  background: #fff;
+  height: 640px;
+  width: 1024px;
+  overflow: hidden;
+  z-index: 10000;
+}
+
+.repl {
+  font-size: 25px !important;
+  height: 500px;
+  width: 1024px;
+}
+
+.compiled {
+  position: absolute;
+  top: 0;
+  left: 1060px;
+  background: rgba(255, 255, 255, 0.9);
+  font-size: 18px;
+  height: 500px;
+  width: 600px;
+  overflow-y: scroll;
+  z-index: 100;
+
+  -moz-box-shadow: -15px 0 15px #ccc;
+  -webkit-box-shadow: -15px 0 15px #ccc;
+  box-shadow: -15px 0 15px #ccc;
+}
+
+.output {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #e3e3e3;
+  padding-left: 50px;
+  height: 140px;
+  width: 974px;
+  z-index: 100;
+}
+
+.output.error {
+  color: #a00;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #999;
+  font-size: 40px;
+  line-height: 60px;
+  text-align: center;
+  height: 60px;
+  width: 60px;
+  z-index: 1000;
+}
+
+.toggle-compiled {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  color: #999;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 60px;
+  text-align: center;
+  height: 60px;
+  width: 60px;
+  z-index: 1000;
+}
+
+.close:hover, .toggle-compiled:hover {
+  color: #444;
+  cursor: pointer;
+}
+
+/* We don't want to display h3 headings */
+h3 {
+  display: none;
+}
